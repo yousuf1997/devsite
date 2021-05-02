@@ -10,6 +10,8 @@ export class AboutMeComponent implements OnInit {
 
   visiblity : boolean;
   description : string;
+  tags = ['Java','Spring Boot','Android Development','Git','C++',"AngularJs",'SQL','Python']
+
   constructor(breakpointObserver : BreakpointObserver) {
     breakpointObserver.observe([
       '(min-width: 1024px)'

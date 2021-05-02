@@ -2,21 +2,25 @@
 <div class="card text-center" style="width: 100%;">
     <div class="card-body text-center">
 
-        
+        <p><b>About Me</b></p>
         <div class="col-lg-3">
-            <p><b>About Me</b></p>
-            <div *ngIf="visiblity"  class="card text-center" id="picCard">
+            <div *ngIf="visiblity" class="card text-center" id="picCard">
                 <div class="card-body">
                     <img src="../../assets/images/my_image.png" alt="Mohamed Yousuf Abdul Rahman" height="50%"
                         width="80%">
                     <hr>
                     <p>Mohamed Yousuf Abdul Rahman (Mohamed Abdul)</p>
+                    <hr>
+                    <p>Tech. Summary</p>
+                    <span *ngFor="let tag of tags">
+                        <span class="badge badge-pill badge-dark">{{tag}}</span>
+                    </span>
                 </div>
             </div>
         </div>
 
         <hr>
-        <p>Hi there, first of all thank you so much visiting my site.
+        <p>Hi there, first of all thank you for visiting my site.
         <p>
         <p>I am an entry level Software Developer based in LA area. I am currently working remotely for <b>Infosys</b>
             as an <b>Associate
@@ -29,9 +33,9 @@
             <br>
             <p><b>[ Q & A about myself ]</b></p>
             <hr>
-            <p><b>2) What tech stack are you currently working on?</b></p>
+            <p><b>1) What tech stack are you currently working on?</b></p>
             <p>I am currently working on stack of Java, Spring Boot, and Angular Js.</p>
-            <p><b>1) What are your hobbies?</b></p>
+            <p><b>2) What are your hobbies?</b></p>
             <p>My hobbies are playing games, watching movies, and learning new things.</p>
 
         </div>

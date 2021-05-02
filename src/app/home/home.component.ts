@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  tags = ['Java','Spring Boot','Android Development','Git','C++',"AngularJs",'SQL','Python']
 
   constructor() { }
 
