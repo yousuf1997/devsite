@@ -9,7 +9,7 @@ export class WorksamplesComponent implements OnInit {
 
   covidDashBoardTechStack = ['AngularJs', 'Bootstrap', 'REST API'];
   sarfDuplicatorTechStack = ['Javascript','HTML','Bootstrap','REST API'];
-  pinItTechStack = ['Android Studio','Java'];
+  pinItTechStack = ['Android Studio','Java','SQL Lite'];
   tamilDictionaryTechStack = ['Android Studio','Java', 'JSON'];
   constructor() { }
 
