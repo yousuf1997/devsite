@@ -7,13 +7,15 @@ import { HomeComponent } from './home/home.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ExperienceComponent } from './experience/experience.component';
 import {LayoutModule} from '@angular/cdk/layout';
+import { WorksamplesComponent } from './worksamples/worksamples.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutMeComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    WorksamplesComponent
   ],
   imports: [
     BrowserModule,
