@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
-p ,a , li,label{
+p ,a , li,label, h3,h4{
     font-family: 'Roboto Mono', monospace;
 }
 

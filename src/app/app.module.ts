@@ -10,6 +10,7 @@ import {LayoutModule} from '@angular/cdk/layout';
 import { WorksamplesComponent } from './worksamples/worksamples.component';
 import { TicTacToeComponent } from './tic-tac-toe/tic-tac-toe.component';
 import { OthersComponent } from './others/others.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { OthersComponent } from './others/others.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LayoutModule
+    LayoutModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
