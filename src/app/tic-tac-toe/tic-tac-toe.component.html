@@ -1,0 +1,114 @@
+<div class="d-flex justify-content-center">
+
+    <div class="p2">
+        
+
+        <div class="container-fluid" style="background-color:darkblue">
+
+            <div class="row">
+
+                <div class="col-4" style="border: solid black;">
+
+                    <h1 *ngIf="!row_1_col_1_X && !row_1_col_1_O" style="color: darkblue;">X</h1>
+
+                    <h1 *ngIf="row_1_col_1_X" >X</h1>
+
+                    <h1 *ngIf="row_1_col_1_O" >O</h1>
+
+                </div>
+
+                <div class="col-4" style="border: solid black;">
+
+                    <h1 *ngIf="!row_1_col_2_X && !row_1_col_2_O" style="color: darkblue;">X</h1>
+               
+                    <h1 *ngIf="row_1_col_2_X">X</h1>
+
+                    <h1 *ngIf="row_1_col_2_O">O</h1>
+
+                </div>
+
+                <div class="col-4" style="border: solid black;">
+
+                    <h1 *ngIf="!row_1_col_3_X && !row_1_col_3_O" style="color: darkblue;">X</h1>
+               
+                    <h1 *ngIf="row_1_col_3_X">X</h1>
+
+                    <h1 *ngIf="row_1_col_3_O">O</h1>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-4" style="border: solid black;">
+
+                    <h1 *ngIf="!row_2_col_1_X && !row_2_col_1_O" style="color: darkblue;">X</h1>
+
+                    <h1 *ngIf="row_2_col_1_X">X</h1>
+
+                    <h1 *ngIf="row_2_col_1_O">O</h1>
+
+                </div>
+
+                <div class="col-4" style="border: solid black;">
+
+                    <h1 *ngIf="!row_2_col_2_X && !row_2_col_2_O" style="color: darkblue;">X</h1>
+               
+                    <h1 *ngIf="row_2_col_2_X">X</h1>
+
+                    <h1 *ngIf="row_2_col_2_O">O</h1>
+
+                </div>
+
+                <div class="col-4" style="border: solid black;">
+
+                    <h1 *ngIf="!row_2_col_3_X && !row_2_col_3_O" style="color: darkblue;">X</h1>
+
+                    <h1 *ngIf="row_2_col_3_X">X</h1>
+
+                    <h1 *ngIf="row_2_col_3_O">O</h1>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-4" style="border: solid black;">
+               
+                    <h1 *ngIf="!row_3_col_1_X && !row_3_col_1_O" style="color: darkblue;">X</h1>
+
+                    <h1 *ngIf="row_3_col_1_X">X</h1>
+
+                    <h1 *ngIf="row_3_col_1_O">O</h1>
+                    
+                </div>
+
+                <div class="col-4" style="border: solid black;">
+                
+                    <h1 *ngIf="!row_3_col_2_X && !row_3_col_2_O" style="color: darkblue;">X</h1>
+
+                    <h1 *ngIf="row_3_col_2_X">X</h1>
+
+                    <h1 *ngIf="row_3_col_2_O">O</h1>
+
+                </div>
+
+                <div class="col-4" (click)="update('row_3_col_3')" style="border: solid black;">
+                    
+                    <h1 *ngIf="!row_3_col_3_X && !row_3_col_3_O" style="color: darkblue;">X</h1>
+
+                    <h1 *ngIf="row_3_col_3_X" style="color: white;">X</h1>
+
+                    <h1 *ngIf="row_3_col_3_O" style="color: turquoise;">O</h1>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

@@ -7,10 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   tags = ['Java','Spring Boot','Android Development','Git','C++',"AngularJs",'SQL','Python']
+  backgroundInvisible: boolean = false;
+  invisibleGuideText = 'Check to see the background.'
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  eventListener(event){
+    if(event.srcElement.checked){
+       this.backgroundInvisible = true;
+       this.invisibleGuideText = 'Uncheck to see the content.'
+
+    } else {
+      this.invisibleGuideText = 'Check to see the background.'
+      this.backgroundInvisible = false;
+    }
   }
 
 }

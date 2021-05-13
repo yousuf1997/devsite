@@ -8,6 +8,8 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { ExperienceComponent } from './experience/experience.component';
 import {LayoutModule} from '@angular/cdk/layout';
 import { WorksamplesComponent } from './worksamples/worksamples.component';
+import { TicTacToeComponent } from './tic-tac-toe/tic-tac-toe.component';
+import { OthersComponent } from './others/others.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { WorksamplesComponent } from './worksamples/worksamples.component';
     HomeComponent,
     AboutMeComponent,
     ExperienceComponent,
-    WorksamplesComponent
+    WorksamplesComponent,
+    TicTacToeComponent,
+    OthersComponent
   ],
   imports: [
     BrowserModule,

@@ -6,4 +6,15 @@ p ,a , li{
 }
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+margin: 0; 
+background-color : #15181A;
+background: url("src/assets/images/back.jpg") no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+
+font-family: Roboto, "Helvetica Neue", sans-serif;
+
+}

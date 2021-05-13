@@ -14,11 +14,23 @@
       <li class="nav-item">
         <a class="nav-link" routerLink="worksamples" routerLinkActive="active">Work Samples</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="others" routerLinkActive="active">Other works</a>
+      </li>
     </ul>
+  
+
   </div>
+
+  
+  <div class="custom-control custom-switch" style="float: right;">
+    <input type="checkbox" (click)="eventListener($event)"class="custom-control-input" id="customSwitches">
+    <label class="custom-control-label" for="customSwitches">{{invisibleGuideText}}</label>
+  </div>
+
 </nav>
 <br>
-<div class="container">
+<div class="container" [ngClass]="{'invisible':backgroundInvisible}">
   <div class="row ">
     <div class="col-lg-3 d-none d-lg-block">
       <div class="card text-center" id="picCard">
@@ -47,9 +59,11 @@
       <router-outlet></router-outlet>
     </div>
   </div>
-
+  <div class="row" style="padding-top: 150px;">
+    <div class="col">
+      <footer class="text-center p-3 bg-light">
+        <p> This website is built using AngularJs with Bootstrap framework, and hosted on Netlify.com</p>
+    </footer>
+    </div>
+  </div>
 </div>
-<br>
-<footer class="text-center p-3 bg-light">
-    <p> This website is built using AngularJs with Bootstrap framework, and hosted on Netlify.com</p>
-</footer>
