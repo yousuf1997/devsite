@@ -12,9 +12,7 @@ export class AboutMeComponent implements OnInit {
   visiblity : boolean;
   description : string;
   tags = ['Java','Spring Boot','Android Development','Git','C++','AngularJs','SQL','Python'];
-  recovered = 0;
-  deaths = 0;
-  confirmed = 0;
+
 
 
   updatedMinutes = -1
@@ -34,24 +32,9 @@ export class AboutMeComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.updateCases();
-    let time2 = setInterval(() =>{ if(this.updatedMinutes != -1) this.updatedMinutes++}, 1000)
-    let timerId = setInterval(() => {
-      this.updateCases();
-    }
-    , 1000 * 60);
+ 
   }
 
-  updateCases() {
-    this.service.getTotalCovidCases().subscribe(
-      (data) => {
-        this.confirmed = data.summaryStats.global.confirmed;
-        this.deaths = data.summaryStats.global.deaths;
-        this.recovered = data.summaryStats.global.recovered;
 
-        console.log(data.summaryStats);
-      }
-    )
-  }
 
 }
