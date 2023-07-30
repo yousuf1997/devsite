@@ -12,7 +12,7 @@ export class AboutMeComponent implements OnInit {
   visiblity : boolean;
   description : string;
   tags = ['Java','Spring Boot','Android Development','Git','C++','AngularJs','SQL','Python'];
-
+  myName: string;
 
 
   updatedMinutes = -1
@@ -32,9 +32,13 @@ export class AboutMeComponent implements OnInit {
   }
 
   ngOnInit() {
- 
-  }
+   
+    }
 
 
 
 }
+function delay(arg0: number) {
+  throw new Error('Function not implemented.');
+}
+

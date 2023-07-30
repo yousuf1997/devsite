@@ -9,7 +9,7 @@
         <a class="nav-link" routerLink="" routerLinkActive="">About Me</a>
       </li> 
       <li class="nav-item">
-        <a class="nav-link" routerLink="experience" routerLinkActive="active">Work Experience</a>
+        <a class="nav-link" routerLink="experience" routerLinkActive="active">Technical Skills</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" routerLink="worksamples" routerLinkActive="active">Work Samples</a>
@@ -32,38 +32,15 @@
 <br>
 <div class="container" [ngClass]="{'invisible':backgroundInvisible}">
   <div class="row ">
-    <div class="col-lg-3 d-none d-lg-block">
-      <div class="card text-center" id="picCard">
-        <div class="card-body">
-          <!-- <img src="../../assets/images/my_image.png" alt="Mohamed Yousuf Abdul Rahman" height="50%" width="80%"> -->
-          <p>Mohamed Yousuf Abdul Rahman (Mohamed Abdul)</p>
-          <hr>
-          <p>Tech. Summary</p>
-          <span *ngFor="let tag of tags">
-            <span class="badge badge-pill badge-dark">{{tag}}</span>
-          </span>
-          <hr>
-          <p><b>Contacts</b></p>
-          <ul>
-            <li><a href="mailto:mohamedyousufmo@gmail.com">mohamedyousufmo@gmail.com</a><br></li>
-            <li><a href="https://www.linkedin.com/in/mohamed-abdul-5a3669111/">LinkedIn</a><br></li>
-          </ul>
-          <hr>
-          <span>
-            <p>Authorized to work for any employers in the U.S.</p>
-          </span>
-        </div>
-      </div>
-      
-    </div>
-    <div class="col-lg-9">
+
+    <div class="col">
       <router-outlet></router-outlet>
     </div>
   </div>
   <div class="row" style="padding-top: 150px;">
     <div class="col">
       <footer class="text-center p-3 bg-light">
-        <p> This website is built using AngularJs with Bootstrap framework, and hosted on Netlify.com</p>
+        <p>&copy; 2023 Mohamed Yousuf Abdul Rahman. All rights reserved.</p>
     </footer>
     </div>
   </div>

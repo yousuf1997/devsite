@@ -1,20 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;600&family=Rubik:wght@400;600;800&display=swap');
 
-p ,a , li,label, h3,h4{
-    font-family: 'Roboto Mono', monospace;
+p ,a , li,label,h2,h3,h4{
+    font-family: 'Rubik', sans-serif;
 }
 
 html, body { height: 100%; }
 body {
 margin: 0; 
-background-color : #15181A;
-background: url("src/assets/images/back.jpg") no-repeat center center fixed; 
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
 
-font-family: Roboto, "Helvetica Neue", sans-serif;
+font-family: 'Anton', sans-serif;
+color: #333;
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Rubik', sans-serif; */
 
 }
+
