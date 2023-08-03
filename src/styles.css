@@ -20,3 +20,9 @@ font-family: 'Rubik', sans-serif; */
 
 }
 
+
+::selection {
+    background-color: #333;
+    color: aliceblue;
+}
+
