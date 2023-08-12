@@ -11,6 +11,7 @@ import { WorksamplesComponent } from './worksamples/worksamples.component';
 import { TicTacToeComponent } from './tic-tac-toe/tic-tac-toe.component';
 import { OthersComponent } from './others/others.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MoviesComponent } from './movies/movies.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
     ExperienceComponent,
     WorksamplesComponent,
     TicTacToeComponent,
-    OthersComponent
+    OthersComponent,
+    MoviesComponent
   ],
   imports: [
     BrowserModule,

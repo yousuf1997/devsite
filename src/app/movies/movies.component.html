@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1 style="letter-spacing: .2rem; float: left; font-size: 2.5em;">
+                <!-- <img style="display: inline;" height="45px" width="45px" src="../../assets/images/icons8-code-50.png" alt=""> -->
+                     Favorite Movies
+            </h1>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col">
+            <p style="font-size: 1.1em;">
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I have combined list of my favorite 
+                 movies I have watched over the years, and will be adding more. I am primary watch more South Indian movies, occasionally BollyWood, and other movies. 
+                 I pretty much watch all language movies with sub-titles. My favorites are mystery, thriller, horror, and adventure. I have rated each movie based on acting,
+                 cinemphotography, and story line. 
+            </p>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-lg-2 col text-center"  style="padding-top: 1rem;" *ngFor="let movie of movies">
+            <div style="width: 170px; height: 300px;">
+                {{movie.rating}}
+                <img width="100%"  height="80%" src={{movie.imageLink}} alt="Card image cap">
+                  <p>{{movie.title}}</p>
+              </div>
+        </div>
+    </div>
+</div>
