@@ -81,6 +81,7 @@ export class AboutMeComponent implements OnInit {
           audience: '',
           setCookie: false,
         });
+        console.log("TEST >> 2")
         console.log("TEST >> ", this.auth.currentUser)
    
   }
@@ -90,6 +91,8 @@ export class AboutMeComponent implements OnInit {
       console.log("Index" ,index)
       this.quoteStr = this.quotes[index].quote;
       this.author = this.quotes[index].author
+      console.log("TEST >> 2")
+      console.log("TEST >> ", this.auth.currentUser)
     }
 
 
