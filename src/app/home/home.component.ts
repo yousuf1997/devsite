@@ -16,6 +16,9 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
+  isLoggedIn() {
+    return this.auth.isLoggedIn();
+  }
   eventListener(event){
     if(event.srcElement.checked){
        this.backgroundInvisible = true;
