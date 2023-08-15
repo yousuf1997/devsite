@@ -12,6 +12,7 @@ import { TicTacToeComponent } from './tic-tac-toe/tic-tac-toe.component';
 import { OthersComponent } from './others/others.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MoviesComponent } from './movies/movies.component';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MoviesComponent } from './movies/movies.component';
     WorksamplesComponent,
     TicTacToeComponent,
     OthersComponent,
-    MoviesComponent
+    MoviesComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

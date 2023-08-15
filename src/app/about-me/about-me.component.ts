@@ -75,14 +75,6 @@ export class AboutMeComponent implements OnInit {
             this.visiblity = true;
           }
         });
-
-        this.auth = new GoTrue({
-          APIUrl: 'https://devmohamed.com/.netlify/identity',
-          audience: '',
-          setCookie: false,
-        });
-        console.log("TEST >> 2")
-        console.log("TEST >> ", this.auth.currentUser)
    
   }
 
@@ -91,8 +83,6 @@ export class AboutMeComponent implements OnInit {
       console.log("Index" ,index)
       this.quoteStr = this.quotes[index].quote;
       this.author = this.quotes[index].author
-      console.log("TEST >> 2")
-      console.log("TEST >> ", this.auth.currentUser)
     }
 
 

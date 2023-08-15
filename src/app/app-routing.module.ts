@@ -5,6 +5,8 @@ import { ExperienceComponent } from './experience/experience.component';
 import { WorksamplesComponent } from './worksamples/worksamples.component';
 import { OthersComponent } from './others/others.component';
 import { MoviesComponent } from './movies/movies.component';
+import { MenuComponent } from './menu/menu.component';
+import { AuthService } from './auth.service';
 
 
 const routes: Routes = [
@@ -13,6 +15,7 @@ const routes: Routes = [
   { path: 'worksamples', component: WorksamplesComponent },
   { path: 'articles', component: OthersComponent },
   { path: 'movies', component: MoviesComponent },
+  { path: 'menu', component: MenuComponent, canActivate: [AuthService]}
 ];
 
 @NgModule({
