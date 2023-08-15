@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {BreakpointObserver, Breakpoints} from '@angular/cdk/layout';
 import { GeneralService } from '../general.service';
+import GoTrue from 'gotrue-js';
 
 @Component({
   selector: 'app-about-me',
@@ -60,7 +61,8 @@ export class AboutMeComponent implements OnInit {
   
 
   updatedMinutes = -1
-
+  auth: GoTrue;
+  
   resultUpdated = false
   constructor(private breakpointObserver : BreakpointObserver, private service: GeneralService) {
     breakpointObserver.observe([
@@ -73,6 +75,13 @@ export class AboutMeComponent implements OnInit {
             this.visiblity = true;
           }
         });
+
+        this.auth = new GoTrue({
+          APIUrl: 'https://devmohamed.com/.netlify/identity',
+          audience: '',
+          setCookie: false,
+        });
+        console.log("TEST >> ", this.auth.currentUser)
    
   }
 
