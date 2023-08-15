@@ -7,9 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
+  visibleState;
+  closeMenu = false;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+
+  event(str) {
+    if (str == 'menu') {
+      this.closeMenu = false
+    } else {
+      this.closeMenu = true
+    }
+    this.visibleState = 'movie'
+  }
+
+  isMovieVisible() {
+    return this.visibleState == 'movie'
+  }
 }

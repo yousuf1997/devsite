@@ -1,1 +1,20 @@
-<p>menu works!</p>
+<div class="container" *ngIf="!closeMenu">
+    <div class="row">
+        <div class="col-2">
+            <button type="button" (click)="event('movie')" class="btn btn-light">
+                <img height="50px" width="50px" src="../../assets/images/icons8-movie-50.png" alt="">
+                Add Movie
+            </button>
+        </div>
+    </div>
+</div>
+
+<button *ngIf="closeMenu" type="button" (click)="event('menu')" class="btn btn-light">
+    <img height="50px" width="50px" src="../../assets/images/icons8-back-64.png" alt="">
+    Menu
+</button>
+<br>
+<br>
+<div *ngIf="isMovieVisible()">
+    <app-add-movie></app-add-movie>
+</div>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +12,7 @@ export class HomeComponent implements OnInit {
   backgroundInvisible: boolean = false;
   invisibleGuideText = 'Check to see the background.'
 
-  constructor(private auth: AuthService) { }
+  constructor(private auth: AuthService, private router: Router) { }
 
   ngOnInit() {
   }
@@ -19,6 +20,12 @@ export class HomeComponent implements OnInit {
   isLoggedIn() {
     return this.auth.isLoggedIn();
   }
+
+  logOut() {
+    this.auth.logOut();
+  }
+
+
   eventListener(event){
     if(event.srcElement.checked){
        this.backgroundInvisible = true;

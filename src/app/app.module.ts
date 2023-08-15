@@ -13,6 +13,7 @@ import { OthersComponent } from './others/others.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MoviesComponent } from './movies/movies.component';
 import { MenuComponent } from './menu/menu.component';
+import { AddMovieComponent } from './add-movie/add-movie.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { MenuComponent } from './menu/menu.component';
     TicTacToeComponent,
     OthersComponent,
     MoviesComponent,
-    MenuComponent
+    MenuComponent,
+    AddMovieComponent
   ],
   imports: [
     BrowserModule,

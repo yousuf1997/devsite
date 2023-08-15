@@ -21,6 +21,7 @@
     "@angular/platform-browser": "~9.1.13",
     "@angular/platform-browser-dynamic": "~9.1.13",
     "@angular/router": "~9.1.13",
+    "@netlify/functions": "^1.6.0",
     "bootstrap": "^4.6.0",
     "gotrue-js": "^0.9.29",
     "jquery": "^3.6.0",
