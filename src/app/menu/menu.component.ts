@@ -19,6 +19,7 @@ export class MenuComponent implements OnInit {
   event(str) {
     if (str == 'menu') {
       this.closeMenu = false
+      this.visibleState = ''
     } else {
       this.closeMenu = true
     }
