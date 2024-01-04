@@ -21,8 +21,9 @@
         <span class="dropdown-menu">
           <a class="dropdown-item" routerLink="articles">Articles</a>
           <a class="dropdown-item" routerLink="movies">Movies</a>
+          <a class="dropdown-item" href="https://devmohamed.gitbook.io/topics/"  target="_blank">Dev Interview Guide</a>
           <a *ngIf="!isLoggedIn()" class="dropdown-item" data-netlify-identity-button></a>
-          <a *ngIf="isLoggedIn()" class="dropdown-item" routerLink="" (click)="logOut()">LogOut</a>
+          <!-- <a *ngIf="isLoggedIn()" class="dropdown-item" routerLink="" (click)="logOut()">LogOut</a> -->
           <a *ngIf="isLoggedIn()" class="dropdown-item" routerLink="menu">Menu</a>
         </span>
       </li>

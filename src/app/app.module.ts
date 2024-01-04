@@ -14,6 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MoviesComponent } from './movies/movies.component';
 import { MenuComponent } from './menu/menu.component';
 import { AddMovieComponent } from './add-movie/add-movie.component';
+import { DevInterviewGuideComponent } from './dev-interview-guide/dev-interview-guide.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { AddMovieComponent } from './add-movie/add-movie.component';
     OthersComponent,
     MoviesComponent,
     MenuComponent,
-    AddMovieComponent
+    AddMovieComponent,
+    DevInterviewGuideComponent
   ],
   imports: [
     BrowserModule,
